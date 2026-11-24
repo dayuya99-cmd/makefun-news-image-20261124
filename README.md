@@ -5,15 +5,15 @@ Entry for the [make.fun](https://make.fun) bounty
 
 ## What it does
 
-`main.py` builds a 1200×1600 news-summary infographic for Tuesday
-24 November 2026: a header, a hero globe image, and the day's six top
-stories, each with a headline and a one-line summary.
+`main.py` (Python 3, standard library only) writes the entry image to
+`$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output/entry.png`). The image
+(768×1024, 417 KB, within the gate's 1024×1024 and 1 MiB limits) is embedded
+in the program as base64, so it needs no other files.
 
 ## Run
 
 ```sh
-pip install pillow
-python3 main.py   # writes output.png
+python3 main.py   # writes entry.png to $MAKEFUN_OUTPUT_DIR or /output
 ```
 
 ## The six stories
